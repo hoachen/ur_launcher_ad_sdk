@@ -1,4 +1,4 @@
-# Lawnchair SDK 集成文档
+# UR Launcher SDK 集成文档
 
 ## 概述
 
@@ -18,7 +18,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     
-        maven { url uri('/path/to/lawnchair_gitcode/build/repo') }
+        maven { url uri('your/path/to/local/repo') }
     }
 }
 ```
@@ -46,14 +46,14 @@ class MyApplication : Application() {
         super.onCreate()
         
         // 1. 初始化 SDK (必需)
-        app.lawnchair.LauncherSDK.init(this)
+        LauncherSDK.init(this)
 
         // 2. (可选) 配置负一屏
         // 开启/关闭负一屏 (默认开启)
-        app.lawnchair.LauncherSDK.isOverlayEnabled = true
+        LauncherSDK.isOverlayEnabled = true
         
         // 自定义负一屏内容视图
-        // app.lawnchair.LauncherSDK.overlayProvider = object : app.lawnchair.LauncherSDK.OverlayProvider {
+        // app.lawnchair.LauncherSDK.overlayProvider = object : LauncherSDK.OverlayProvider {
         //     override fun createView(context: Context): View {
         //         return MyCustomView(context)
         //     }
