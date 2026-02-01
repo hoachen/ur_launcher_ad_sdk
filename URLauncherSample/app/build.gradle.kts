@@ -14,13 +14,13 @@ configurations.all {
 }
 
 android {
-    namespace = "com.example.mydemo"
+    namespace = "com.ur.apps.launcher.demo"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.mydemo"
+        applicationId = "com.ur.apps.launcher.demo"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

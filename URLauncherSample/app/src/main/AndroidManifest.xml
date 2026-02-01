@@ -9,13 +9,13 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/mydemo"
-        android:name=".MyApplication"
+        android:label="@string/ur_launcher_demo"
+        android:name="com.ur.apps.launcher.demo.MyApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MYdemo">
         <activity
-            android:name=".SplashActivity"
+            android:name="com.ur.apps.launcher.demo.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.MYdemo">
             <intent-filter>

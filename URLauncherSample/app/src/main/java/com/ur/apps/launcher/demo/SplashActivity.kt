@@ -1,4 +1,4 @@
-package com.example.mydemo
+package com.ur.apps.launcher.demo
 
 import android.os.Bundle
 import android.os.Handler
