@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "hidden-api",
+    "version": "1.0.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "hidden-api-1.0.13.aar",
+          "url": "hidden-api-1.0.13.aar",
+          "size": 11515,
+          "sha512": "e105806ed637a2fdb9f93c0741b0aacd5f6abb7d06689491d561bf2550010bf5a924d0911d3b795031307b9d72599e41fca3280ff16904673d135863b27a3faa",
+          "sha256": "b3927303497885cf362c423ce4e16552fb018fb02e56135fe4e141cdbd3189a8",
+          "sha1": "360f88308304ef5d96c5ee8e9378c62b1f2b4df3",
+          "md5": "5b4e25954ef63f3686317b1ec8b87bf3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "hidden-api-1.0.13.aar",
+          "url": "hidden-api-1.0.13.aar",
+          "size": 11515,
+          "sha512": "e105806ed637a2fdb9f93c0741b0aacd5f6abb7d06689491d561bf2550010bf5a924d0911d3b795031307b9d72599e41fca3280ff16904673d135863b27a3faa",
+          "sha256": "b3927303497885cf362c423ce4e16552fb018fb02e56135fe4e141cdbd3189a8",
+          "sha1": "360f88308304ef5d96c5ee8e9378c62b1f2b4df3",
+          "md5": "5b4e25954ef63f3686317b1ec8b87bf3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "hidden-api-1.0.13-sources.jar",
+          "url": "hidden-api-1.0.13-sources.jar",
+          "size": 10538,
+          "sha512": "6f0b25cce652f7c351caad5493fc87428e92d45a68887e7b97675b05b014fa0cca7a6dd8165f8b07834a35b45a796d41caa2df30c4947a2e308e9f5ecab3d142",
+          "sha256": "fcc5cc1f54705532c5ba981104dbd74b89668e32cbb18a5994dab7e08c390c4d",
+          "sha1": "d21d481efdb130d66d507b8a06114ff7fc41fa09",
+          "md5": "954c24f1710d0f8fe9facff11111f8d0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "launcher-sdk",
+    "version": "1.0.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "lawnWithQuickstepPlayReleaseApiElements-published",
+      "attributes": {
+        "app": "lawn",
+        "channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:app": "lawn",
+        "com.android.build.api.attributes.ProductFlavor:channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:recents": "withQuickstep",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "recents": "withQuickstep"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "launcher-sdk-1.0.13.aar",
+          "url": "launcher-sdk-1.0.13.aar",
+          "size": 15592175,
+          "sha512": "6125fe3df953362f5d36f4e1f4dd9b9d7c1cd0afa40542c4f76ea72784ca845c7bacd91f2cfdac048e9563ad76433a4cfcd9e41e471a2dcccb9b817355c9f5b0",
+          "sha256": "c0164033b44394bc7f4ca7e57a0e2e4c8eeb3a305325e33d85d9e1da9fad650b",
+          "sha1": "4d1d5db1fb46e3b0a1877f558ad1d2111326b52c",
+          "md5": "42cb798627fcf19ee290d271055f11c2"
+        }
+      ]
+    },
+    {
+      "name": "lawnWithQuickstepPlayReleaseRuntimeElements-published",
+      "attributes": {
+        "app": "lawn",
+        "channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:app": "lawn",
+        "com.android.build.api.attributes.ProductFlavor:channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:recents": "withQuickstep",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "recents": "withQuickstep"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "shared",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "anim",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "unfold",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "viewcapture",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "log",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "plugincore",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLib",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVQ",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVR",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVS",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVT",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVU",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVV",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "wmshell",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "flags",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-javalite",
+          "version": {
+            "requires": "4.33.2"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "iconloaderlib",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "searchuilib",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "animationlib",
+          "version": {
+            "requires": "1.0.13"
+          }
+        },
+        {
+          "group": "androidx.dynamicanimation",
+          "module": "dynamicanimation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.profileinstaller",
+          "module": "profileinstaller",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.preference",
+          "module": "preference-ktx",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "com.github.ChickenHook",
+          "module": "RestrictionBypass",
+          "version": {
+            "requires": "2.2"
+          }
+        },
+        {
+          "group": "dev.rikka.tools.refine",
+          "module": "runtime",
+          "version": {
+            "requires": "4.4.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2025.12.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-util"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-text-google-fonts"
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.8"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime-livedata"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3-window-size-class"
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "androidx.palette",
+          "module": "palette-ktx",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.slice",
+          "module": "slice-core",
+          "version": {
+            "requires": "1.1.0-alpha02"
+          }
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-adaptive",
+          "version": {
+            "requires": "0.37.3"
+          }
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-drawablepainter",
+          "version": {
+            "requires": "0.37.3"
+          }
+        },
+        {
+          "group": "com.google.accompanist",
+          "module": "accompanist-permissions",
+          "version": {
+            "requires": "0.37.3"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "io.github.fornewid",
+          "module": "material-motion-compose-core",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "dev.kdrag0n",
+          "module": "colorkt",
+          "version": {
+            "requires": "1.0.5"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil-compose",
+          "version": {
+            "requires": "2.7.0"
+          }
+        },
+        {
+          "group": "me.xdrop",
+          "module": "fuzzywuzzy",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.patrykmichalik.opto",
+          "module": "domain",
+          "version": {
+            "requires": "1.0.18"
+          }
+        },
+        {
+          "group": "com.patrykmichalik.opto",
+          "module": "core",
+          "version": {
+            "requires": "1.0.18"
+          }
+        },
+        {
+          "group": "com.patrykmichalik.opto",
+          "module": "compose",
+          "version": {
+            "requires": "1.0.18"
+          }
+        },
+        {
+          "group": "androidx.datastore",
+          "module": "datastore-preferences",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-kotlinx-serialization",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.8.4"
+          }
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-ktx",
+          "version": {
+            "requires": "2.8.4"
+          }
+        },
+        {
+          "group": "com.github.topjohnwu.libsu",
+          "module": "service",
+          "version": {
+            "requires": "6.0.0"
+          }
+        },
+        {
+          "group": "com.github.samanzamani",
+          "module": "PersianDate",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.7.1"
+          }
+        },
+        {
+          "group": "sh.calvin.reorderable",
+          "module": "reorderable",
+          "version": {
+            "requires": "2.5.1"
+          }
+        },
+        {
+          "group": "com.kieronquinn.smartspacer",
+          "module": "sdk-client",
+          "version": {
+            "requires": "1.1.2"
+          },
+          "excludes": [
+            {
+              "group": "com.github.skydoves",
+              "module": "balloon"
+            }
+          ]
+        },
+        {
+          "group": "io.github.hokofly",
+          "module": "hoko-blur",
+          "version": {
+            "requires": "1.5.5"
+          }
+        },
+        {
+          "group": "androidx.window",
+          "module": "window",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "launcher-sdk-1.0.13.aar",
+          "url": "launcher-sdk-1.0.13.aar",
+          "size": 15592175,
+          "sha512": "6125fe3df953362f5d36f4e1f4dd9b9d7c1cd0afa40542c4f76ea72784ca845c7bacd91f2cfdac048e9563ad76433a4cfcd9e41e471a2dcccb9b817355c9f5b0",
+          "sha256": "c0164033b44394bc7f4ca7e57a0e2e4c8eeb3a305325e33d85d9e1da9fad650b",
+          "sha1": "4d1d5db1fb46e3b0a1877f558ad1d2111326b52c",
+          "md5": "42cb798627fcf19ee290d271055f11c2"
+        }
+      ]
+    },
+    {
+      "name": "lawnWithQuickstepPlayReleaseSourcesElements-published",
+      "attributes": {
+        "app": "lawn",
+        "channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:app": "lawn",
+        "com.android.build.api.attributes.ProductFlavor:channel": "play",
+        "com.android.build.api.attributes.ProductFlavor:recents": "withQuickstep",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm",
+        "recents": "withQuickstep"
+      },
+      "files": [
+        {
+          "name": "launcher-sdk-1.0.13-sources.jar",
+          "url": "launcher-sdk-1.0.13-sources.jar",
+          "size": 9927119,
+          "sha512": "3ef4c66eec36b1cd83b512dfb148e6a882533956e210a4cb26d37423e5d41a3360cadf04dba14c51801990ba34a823647d6a75e03c62911262fe25cfec69d9d6",
+          "sha256": "b2a37870988e22a037b35d2aeffb1de008e9227a6c440b0b458365562d929e14",
+          "sha1": "e19f63e12725d94e128f70ccb69dd52678d70d45",
+          "md5": "1783f419e42c8f0d5aacca692ffdafa7"
+        }
+      ]
+    }
+  ]
+}
