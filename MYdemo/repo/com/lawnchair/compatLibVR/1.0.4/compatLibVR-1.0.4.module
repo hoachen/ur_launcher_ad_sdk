@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "compatLibVR",
+    "version": "1.0.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVQ",
+          "version": {
+            "requires": "1.0.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compatLibVR-1.0.4.aar",
+          "url": "compatLibVR-1.0.4.aar",
+          "size": 7851,
+          "sha512": "77178263b57f10b3498c9a4c230f4eca386b19f37270de70645a02d3f1cbb9810249c56a6f7231589bf352c2cedbe131c7459065294f1e72303938a000a7d01c",
+          "sha256": "3096288e444c63f77d3a54895c193d8b9bd911989da8e8e9161a210e2108a8d8",
+          "sha1": "8338b612ef2b69fcf524edb3f3380403dd37500f",
+          "md5": "f493e501453755638c2925bce6c451f7"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVQ",
+          "version": {
+            "requires": "1.0.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compatLibVR-1.0.4.aar",
+          "url": "compatLibVR-1.0.4.aar",
+          "size": 7851,
+          "sha512": "77178263b57f10b3498c9a4c230f4eca386b19f37270de70645a02d3f1cbb9810249c56a6f7231589bf352c2cedbe131c7459065294f1e72303938a000a7d01c",
+          "sha256": "3096288e444c63f77d3a54895c193d8b9bd911989da8e8e9161a210e2108a8d8",
+          "sha1": "8338b612ef2b69fcf524edb3f3380403dd37500f",
+          "md5": "f493e501453755638c2925bce6c451f7"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "compatLibVR-1.0.4-sources.jar",
+          "url": "compatLibVR-1.0.4-sources.jar",
+          "size": 4125,
+          "sha512": "61bbcfcfc41dbc5760ae05b7a7888537c4e8764ef68d965f44eaaa0220e16edfbc3249ad490e30dde3faa93fb55a61d1adfc5fd9d74b700f792ba59c5ae7ff74",
+          "sha256": "d93c5a5facda050b9e924cbd1c57cb177d03135dcf96d7f542a4db8ed5bd6130",
+          "sha1": "a46a7594f8b35e9c8b0f418e092f907140ca7c40",
+          "md5": "577d340e0cd595b37f8918ee607fd832"
+        }
+      ]
+    }
+  ]
+}

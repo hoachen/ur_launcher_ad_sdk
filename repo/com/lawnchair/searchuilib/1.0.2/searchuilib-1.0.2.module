@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "searchuilib",
+    "version": "1.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "searchuilib-1.0.2.aar",
+          "url": "searchuilib-1.0.2.aar",
+          "size": 3223,
+          "sha512": "809bbeaeb161c9fd81d04454ed693fcb7e797476600803b97c0277c987a28c953f204748ef7315b17f2108c4da6d47cee7105fb31f9b3882b5def8233d4d1403",
+          "sha256": "359468ad01643edc7dba4254f1e3024704ea5e606249e18365665fd3f4e4dc24",
+          "sha1": "1ce64f6a7f77c8aeaa43fc4c7ad713b882211b92",
+          "md5": "74b1aa3fd167a3fe2b9aec2563e98b33"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "searchuilib-1.0.2.aar",
+          "url": "searchuilib-1.0.2.aar",
+          "size": 3223,
+          "sha512": "809bbeaeb161c9fd81d04454ed693fcb7e797476600803b97c0277c987a28c953f204748ef7315b17f2108c4da6d47cee7105fb31f9b3882b5def8233d4d1403",
+          "sha256": "359468ad01643edc7dba4254f1e3024704ea5e606249e18365665fd3f4e4dc24",
+          "sha1": "1ce64f6a7f77c8aeaa43fc4c7ad713b882211b92",
+          "md5": "74b1aa3fd167a3fe2b9aec2563e98b33"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "searchuilib-1.0.2-sources.jar",
+          "url": "searchuilib-1.0.2-sources.jar",
+          "size": 3130,
+          "sha512": "c8c0ae5855b119081b1e13e70980aa494a1db5dac0188ecd98c5566dbe1b1be1caa18af8c3e24093cbeae42a56b272ab394d3f48d503bf7c47af3fbf570a290b",
+          "sha256": "8fbf1c8b173d7aafb49dd54e164bddaf67a2faf2498eed5c33aca8061e4c1bd0",
+          "sha1": "840e6a1e8558dbfc2aeaf0856e159340352a0254",
+          "md5": "d9f181f4b709d424114845f335de956c"
+        }
+      ]
+    }
+  ]
+}

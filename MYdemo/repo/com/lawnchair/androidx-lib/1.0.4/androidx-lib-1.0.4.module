@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "androidx-lib",
+    "version": "1.0.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "androidx-lib-1.0.4.aar",
+          "url": "androidx-lib-1.0.4.aar",
+          "size": 32143,
+          "sha512": "9c3f05003f5d7df3c65f567765fb5dfed0c3da517ab4abee9721bba7775540ee71e329f21fa75942c6622fc5e046c47bd62670fabb097f0c863fce6c2816b42e",
+          "sha256": "f4838dd97ee606d120ecd274885264d876b8fd2f6b142a0491c8e3d911f18135",
+          "sha1": "aaea40356db885c7bdff18aceb7c15099ea8c6d9",
+          "md5": "4f87620fbc55ba6445bcc27594a520ae"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "androidx-lib-1.0.4.aar",
+          "url": "androidx-lib-1.0.4.aar",
+          "size": 32143,
+          "sha512": "9c3f05003f5d7df3c65f567765fb5dfed0c3da517ab4abee9721bba7775540ee71e329f21fa75942c6622fc5e046c47bd62670fabb097f0c863fce6c2816b42e",
+          "sha256": "f4838dd97ee606d120ecd274885264d876b8fd2f6b142a0491c8e3d911f18135",
+          "sha1": "aaea40356db885c7bdff18aceb7c15099ea8c6d9",
+          "md5": "4f87620fbc55ba6445bcc27594a520ae"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "androidx-lib-1.0.4-sources.jar",
+          "url": "androidx-lib-1.0.4-sources.jar",
+          "size": 25042,
+          "sha512": "ec5a7f5a715ea7b75107923c0312a26468a7218d551a8ce08fb446fe17e3255c879c849e20c2001bde3aa491ee1eb0ad5f9ed5bef576ca1315fdabaae15cdc72",
+          "sha256": "c2217e1e7ccd628382422a91f2654f1ec0b56e8e479c06bdbcf85e0fdc825fba",
+          "sha1": "70b308d7da105c997174b7559d29cfbba0595b6d",
+          "md5": "0d735ce6e6c3ce4601745f5c50156da6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.lawnchair",
+    "module": "compatLibVU",
+    "version": "1.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVT",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compatLibVU-1.0.3.aar",
+          "url": "compatLibVU-1.0.3.aar",
+          "size": 4142,
+          "sha512": "5da2ac37d39b47db454fdb2dac3d5cf4f3b18fc3a153a665631593141193bea2b4945c6b35f619ca137940fd4d35b0238e62df134342472b3d4aa7281adfc902",
+          "sha256": "67ad5e5d6c2e361eeb472c017cd7e5c49d9105e377fe7531f3cffb07e195ff4e",
+          "sha1": "a00cbdd17b5a8604b33105087866e2d81d879110",
+          "md5": "212ef5207e5482a56b7851bc22c43141"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "com.lawnchair",
+          "module": "compatLibVT",
+          "version": {
+            "requires": "1.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compatLibVU-1.0.3.aar",
+          "url": "compatLibVU-1.0.3.aar",
+          "size": 4142,
+          "sha512": "5da2ac37d39b47db454fdb2dac3d5cf4f3b18fc3a153a665631593141193bea2b4945c6b35f619ca137940fd4d35b0238e62df134342472b3d4aa7281adfc902",
+          "sha256": "67ad5e5d6c2e361eeb472c017cd7e5c49d9105e377fe7531f3cffb07e195ff4e",
+          "sha1": "a00cbdd17b5a8604b33105087866e2d81d879110",
+          "md5": "212ef5207e5482a56b7851bc22c43141"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "compatLibVU-1.0.3-sources.jar",
+          "url": "compatLibVU-1.0.3-sources.jar",
+          "size": 2173,
+          "sha512": "f9751f49e94c58087a2d3c6d3d34266900c3f84f92a5f8db4678bcafdc8b969ddffb218554b6c6f6399d9f7e5dce8a49d1dfa8b6943b82c56a50e183490516df",
+          "sha256": "2c723d8343a549034768e977c9f224875c8dabdb95699163f0f7c23fa7669410",
+          "sha1": "41cc121b9de2886d2ec9fe3a2403b7d77d02eb02",
+          "md5": "240f812466cff2c68ef709f340c37099"
+        }
+      ]
+    }
+  ]
+}
