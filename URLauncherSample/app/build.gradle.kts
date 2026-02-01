@@ -77,7 +77,8 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-    implementation("com.lawnchair:launcher-sdk:1.0.13") {
+    implementation("com.lawnchair:launcher-sdk:1.0.14") {
         exclude(group = "com.github.samanzamani", module = "PersianDate")
     }
+
 }
