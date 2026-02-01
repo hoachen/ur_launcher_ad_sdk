@@ -8,7 +8,8 @@ class MyApplication : Application() {
         super.onCreate()
         LauncherSDK.init(this)
         LauncherSDK.onLauncherAppStateCreated(this)
-        
+
+        // 开启负一屏 ，自定义负一屏试图
         LauncherSDK.isOverlayEnabled = true
         LauncherSDK.overlayProvider = object : LauncherSDK.OverlayProvider {
             override fun createView(context: android.content.Context): android.view.View {

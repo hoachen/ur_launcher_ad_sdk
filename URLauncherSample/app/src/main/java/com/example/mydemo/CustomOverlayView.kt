@@ -6,6 +6,9 @@ import android.view.Gravity
 import android.widget.FrameLayout
 import android.widget.TextView
 
+/**
+ * 自定义负一屏内容
+ */
 class CustomOverlayView(context: Context) : FrameLayout(context) {
     init {
         setBackgroundColor(Color.LTGRAY)
