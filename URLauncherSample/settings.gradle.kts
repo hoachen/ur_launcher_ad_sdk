@@ -1,5 +1,8 @@
 pluginManagement {
     repositories {
+        flatDir {
+            dirs("./app/libs")
+        }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -53,6 +56,9 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        flatDir {
+            dirs("./app/libs")
+        }
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }

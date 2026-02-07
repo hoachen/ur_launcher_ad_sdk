@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.view.View
 import app.lawnchair.LauncherSDK
+import com.ur.apps.sad.UR
 
 class MyApplication : Application() {
     override fun onCreate() {
@@ -18,5 +19,7 @@ class MyApplication : Application() {
                 return CustomOverlayView(context)
             }
         }
+        // 渠道信息从tenjin里获取
+        UR.init(this, "user-ad-network")
     }
 }

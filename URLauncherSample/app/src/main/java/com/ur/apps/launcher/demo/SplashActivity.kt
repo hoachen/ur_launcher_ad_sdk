@@ -1,8 +1,11 @@
 package com.ur.apps.launcher.demo
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -121,16 +124,15 @@ class SplashActivity : ComponentActivity() {
                             modifier = Modifier.alpha(textAlpha),
                         )
                         Spacer(modifier = Modifier.height(24.dp))
-                        Row(
-                            horizontalArrangement = Arrangement.spacedBy(12.dp),
-                            verticalAlignment = Alignment.CenterVertically,
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.Center
                         ) {
                             Button(
                                 onClick = {
                                      // Placeholder for Launcher Setting Manager
-                                    LauncherSettingManager.openLauncherChooserAndFinish(
+                                    LauncherSettingManager.openLauncherChooser(
                                         this@SplashActivity)
-                                     finish()
                                 },
                                 shape = RoundedCornerShape(24.dp),
                                 colors = ButtonDefaults.buttonColors(
@@ -141,14 +143,16 @@ class SplashActivity : ComponentActivity() {
                                 Text(text = "跳转到启动器")
                             }
                             Button(
-                                onClick = {},
+                                onClick = {
+                                    checkOverlayPermission()
+                                },
                                 shape = RoundedCornerShape(24.dp),
                                 colors = ButtonDefaults.buttonColors(
                                     containerColor = MaterialTheme.colorScheme.secondaryContainer,
                                     contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
                                 ),
                             ) {
-                                Text(text = "按钮2")
+                                Text(text = "引导悬浮窗权限")
                             }
                             Button(
                                 onClick = {},
@@ -172,6 +176,20 @@ class SplashActivity : ComponentActivity() {
 
             }
         }, 3000)
+    }
+
+
+    /**
+     * 检查并跳转悬浮窗权限设置页面
+     */
+    private fun checkOverlayPermission() {
+        if (!Settings.canDrawOverlays(this)) {
+            val intent = Intent(
+                Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                Uri.parse("package:$packageName")
+            )
+            startActivity(intent)
+        }
     }
 
     override fun onDestroy() {
